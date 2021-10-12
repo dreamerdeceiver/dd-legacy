@@ -1,0 +1,5 @@
+X = float(input('Введите координату X'))
+Y = float(input('Введите координату Y'))
+Z = float(input('Введите координату Z'))
+Vlength = ((X) ** (2) + (Y) ** (2) + (Z) ** (2)) ** (0,5)
+print(Vlength) 
