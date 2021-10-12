@@ -4,4 +4,4 @@ suitable = []
 for i in range(x, y):
     if i % 5 == 0:
         suitable.append(i)
-print(sum(suitable)) 
+print(sum(suitable))

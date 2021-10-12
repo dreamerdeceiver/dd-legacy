@@ -9,8 +9,8 @@ elif x < 0 and y < 0:
 elif x > 0 and y < 0:
     print('Точка принадлежит четвёртой четверти')
 elif x == 0 and y != 0:
-    print('Точка лежит на оси x')
-elif y == 0 and x != 0:
     print('Точка лежит на оси y')
+elif y == 0 and x != 0:
+    print('Точка лежит на оси x')
 else: 
     print('Точка попадает в начало координат') 
