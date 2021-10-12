@@ -1,7 +1,7 @@
-X = int(input('Введите число X'))
-Y = int(input('Введите число Y'))
+x = int(input('Введите число x'))
+y = int(input('Введите число y'))
 suitable = []
-for i in range(X,Y):
+for i in range(x, y):
     if i % 5 == 0:
         suitable.append(i)
-print(sum(suitable))
+print(sum(suitable)) 
