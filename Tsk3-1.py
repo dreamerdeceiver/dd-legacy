@@ -1,14 +1,11 @@
 def inptr(lst, inp):
     lst = []
     inp = 0
-    while True:
-        if inp != '':
-            inp = input('Введите что-нибудь: ')
-            lst.append(inp)
-        else:
-            break
-        new_lst = lst[:-1]
-    print(new_lst)
+    while inp != '':
+        inp = input('Введите что-нибудь: ')
+        lst.append(inp)
+    lst = lst[:-1]
+    print(lst)
 
 
 lst = []

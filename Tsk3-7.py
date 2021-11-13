@@ -1,7 +1,6 @@
 import collections
 
 def lng_n_frq(text):
-    text = input('Введите текст: ')
     words = text.split()
     counter = collections.Counter(words)
     most_common, occurrences = counter.most_common()[0]
@@ -9,5 +8,5 @@ def lng_n_frq(text):
     print(most_common, longest)
 
 
-text = 0
+text = input('Введите текст: ')
 lng_n_frq(text)
