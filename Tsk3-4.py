@@ -1,13 +1,18 @@
 from collections import Counter
 
 
-def cntr(lst):
-    print(Counter(lst))
+def cntr(list):
+    print(Counter(list))
 
 
-lst = list()
-inp = (input('Введите число: '))
-while inp != '':
-    lst.append(inp)
-    inp = (input('Введите что-нибудь: '))
-cntr(lst)
+def inptr(lst, inp):
+    lst = []
+    inp = 0
+    while inp != '':
+        inp = input('Введите что-нибудь: ')
+        lst.append(inp)
+    lst = lst[:-1]
+    return lst
+
+
+cntr(inptr(lst=[], inp=0))

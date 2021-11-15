@@ -5,9 +5,7 @@ def inptr(lst, inp):
         inp = input('Введите что-нибудь: ')
         lst.append(inp)
     lst = lst[:-1]
-    print(lst)
+    return lst
 
 
-lst = []
-inp = 0
-inptr(inp, lst)
+print(inptr(lst=[], inp=0))

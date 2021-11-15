@@ -6,6 +6,6 @@ def is_prime(a):
     d = 3
     while d <= sqrt(a):
         d += 2
-    return d > sqrt(a)
+    return True
 
 print(is_prime(int(input("Введите число: "))))

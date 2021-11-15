@@ -1,15 +1,18 @@
-#from statistics import mean
-
-
-def avrg(lst):
-    sm = sum(lst) / len(lst)
+def avrg(list):
+    sm = sum(list) / len(list)
     print('Среднее арифметическое чисел списка:', sm)
 
 
-lst = list()
-inp = (input('Введите число: '))
-while inp != "":
-    lst.append(float(inp))
-    inp = (input('Введите что-нибудь: '))
-print(lst)
-avrg(lst)
+def inptr(lst, inp):
+    lst = []
+    inp = 0
+    while inp != '':
+        inp = input('Введите что-нибудь: ')
+        lst.append(inp)
+    lst = lst[:-1]
+    return lst
+
+
+avrg(inptr(lst=0, inp=0))
+#lst = [2, 4, 6 ,8]
+#avrg(lst)
