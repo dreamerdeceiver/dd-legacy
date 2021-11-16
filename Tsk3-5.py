@@ -10,9 +10,8 @@ def inptr(lst, inp):
         inp = input('Введите что-нибудь: ')
         lst.append(inp)
     lst = lst[:-1]
-    return lst
-
+    lst1 = [int(i) for i in lst]
+    return lst1
+    
 
 avrg(inptr(lst=0, inp=0))
-#lst = [2, 4, 6 ,8]
-#avrg(lst)
