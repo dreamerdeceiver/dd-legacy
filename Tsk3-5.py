@@ -5,13 +5,14 @@ def avrg(list):
 
 def inptr(lst, inp):
     lst = []
-    inp = 0
-    while inp != '':
-        inp = input('Введите что-нибудь: ')
-        lst.append(inp)
-    lst = lst[:-1]
-    lst1 = [int(i) for i in lst]
-    return lst1
+    inp = int(input('Введите что-нибудь: '))
+    while inp != '': 
+        try:
+            lst.append(inp)
+            inp = int(input('Введите что-нибудь: '))
+        except:
+            return lst
+    return lst 
     
-
+    
 avrg(inptr(lst=0, inp=0))
