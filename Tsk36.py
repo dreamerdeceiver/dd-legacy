@@ -1,11 +1,10 @@
-from math import sqrt
-
-def is_prime(a):
-    if a % 2 == 0:
-        return a == 2
+def isPrime(n):
+    if n % 2 == 0:
+        return n == 2
     d = 3
-    while d <= sqrt(a):
+    while d ** 2 <= n and n % d != 0:
         d += 2
-    return True
+    return d ** 2 > n
 
-print(is_prime(int(input("Введите число: "))))
+
+print(isPrime(n=int(input('Введите число: '))))

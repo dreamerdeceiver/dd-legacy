@@ -3,9 +3,9 @@ from Tsk31 import inptr
 def avrg(list):
     if len(list) != 0:
         sm = sum(list) / len(list)
-        print('Среднее арифметическое чисел списка:', sm)
+        return sm
     else:
-        print('Введён пустой список')
+        return "Введён пустой список"
 
 
-avrg(inptr(lst=[], inp=0))
+print(avrg(inptr(lst=[], inp=input('Введите что-нибудь: '))))
