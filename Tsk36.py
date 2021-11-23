@@ -1,4 +1,4 @@
-def isPrime(n):
+def is_prime(n):
     if n % 2 == 0:
         return n == 2
     d = 3
@@ -7,4 +7,4 @@ def isPrime(n):
     return d ** 2 > n
 
 
-print(isPrime(n=int(input('Введите число: '))))
+print(is_prime(n=int(input('Введите число: '))))
